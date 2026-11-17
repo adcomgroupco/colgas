@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Informe de pauta de Colgas: BigPromo, WhatsApp Movilidad, Alojamiento y Podcast. Corte del 1 de enero al 20 de septiembre de 2026.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#ffc400">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23ffc400'/%3E%3Ccircle cx='32' cy='32' r='11' fill='%23071b3a'/%3E%3C/svg%3E">
+  <title>Colgas | Resultados de campañas · 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --yellow: #ffc400;
+      --yellow-soft: #fff4c2;
+      --navy: #071b3a;
+      --blue: #1269d3;
+      --sky: #dfefff;
+      --paper: #ffffff;
+      --ground: #f3f6fa;
+      --ink: #101722;
+      --muted: #5d6878;
+      --rule: #d9e0e8;
+      --green: #15785f;
+      --max: 1240px;
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--ground);
+      font-family: "Poppins", Arial, sans-serif;
+      font-variant-numeric: tabular-nums;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    a:focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+    .skip-link { position: fixed; left: 16px; top: -60px; z-index: 100; padding: 10px 14px; background: #fff; }
+    .skip-link:focus { top: 16px; }
+
+    .masthead {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid rgba(7,27,58,.12);
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(14px);
+    }
+    .masthead-inner { min-height: 68px; display: flex; align-items: center; gap: 30px; }
+    .brand { display: flex; align-items: center; gap: 10px; margin-right: auto; text-decoration: none; font-weight: 800; }
+    .brand-mark { width: 22px; height: 22px; border: 7px solid var(--yellow); border-radius: 50%; background: var(--navy); }
+    .brand span { color: var(--muted); font-size: .78rem; font-weight: 500; }
+    nav { display: flex; gap: 22px; }
+    nav a { color: var(--muted); text-decoration: none; font-size: .78rem; font-weight: 600; }
+    nav a:hover { color: var(--navy); }
+    .date-stamp { color: var(--navy); font-size: .75rem; font-weight: 700; }
+
+    .hero { position: relative; overflow: hidden; color: var(--navy); background: var(--yellow); }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 440px;
+      height: 440px;
+      right: -160px;
+      top: -155px;
+      border: 72px solid rgba(255,255,255,.28);
+      border-radius: 50%;
+    }
+    .hero-inner { position: relative; z-index: 1; min-height: 590px; padding: 82px 0 54px; display: grid; grid-template-columns: 1.4fr .6fr; gap: 60px; align-items: end; }
+    .kicker { margin: 0 0 20px; font-size: .82rem; font-weight: 700; }
+    h1, h2, h3 { margin: 0; line-height: 1.12; letter-spacing: -.035em; }
+    h1 { max-width: 860px; font-size: clamp(3rem, 7vw, 6.4rem); }
+    .hero-lede { max-width: 760px; margin: 26px 0 0; font-size: clamp(1rem, 1.5vw, 1.2rem); }
+    .hero-aside { align-self: stretch; display: flex; flex-direction: column; justify-content: flex-end; border-left: 1px solid rgba(7,27,58,.25); padding-left: 28px; }
+    .hero-aside strong { display: block; font-size: clamp(3.8rem, 8vw, 7rem); line-height: .9; letter-spacing: -.075em; }
+    .hero-aside p { max-width: 260px; margin: 18px 0 0; font-size: .9rem; }
+    .hero-meta { margin-top: 46px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .hero-meta span { padding: 7px 11px; border: 1px solid rgba(7,27,58,.28); border-radius: 999px; font-size: .72rem; font-weight: 600; }
+
+    main { padding: 34px 0 80px; }
+    .section { scroll-margin-top: 88px; padding: 62px 0; }
+    .section + .section { border-top: 1px solid var(--rule); }
+    .section-head { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 36px; margin-bottom: 34px; }
+    .section-label { color: var(--blue); font-size: .8rem; font-weight: 700; }
+    .section-copy h2 { max-width: 840px; font-size: clamp(2rem, 4.5vw, 4rem); }
+    .section-copy p { max-width: 770px; margin: 18px 0 0; color: var(--muted); }
+
+    .flow-board { overflow: hidden; border: 1px solid var(--navy); background: var(--paper); }
+    .flow-scale { display: flex; height: 76px; color: #fff; }
+    .flow-segment { min-width: 10px; display: flex; align-items: center; padding: 0 14px; overflow: hidden; white-space: nowrap; font-size: .72rem; font-weight: 700; }
+    .flow-segment.big { width: 67.2%; background: var(--navy); }
+    .flow-segment.always { width: 21.5%; color: var(--navy); background: var(--sky); }
+    .flow-segment.colgasya { width: 1.8%; padding: 0; background: #8bc5ff; }
+    .flow-segment.podcast { width: 8.1%; color: var(--navy); background: var(--yellow); }
+    .flow-segment.alojamiento { width: .9%; padding: 0; background: #f4a340; }
+    .flow-segment.movilidad { width: .6%; padding: 0; background: var(--blue); }
+    .flow-legend { display: grid; grid-template-columns: repeat(6, 1fr); }
+    .flow-legend div { min-height: 118px; padding: 20px; border-right: 1px solid var(--rule); }
+    .flow-legend div:last-child { border-right: 0; }
+    .flow-legend dt { color: var(--muted); font-size: .72rem; font-weight: 600; }
+    .flow-legend dd { margin: 8px 0 0; font-size: 1.18rem; font-weight: 700; }
+    .flow-legend small { display: block; margin-top: 5px; color: var(--muted); }
+
+    .platform-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 18px; }
+    .platform { padding: 26px; color: white; background: var(--navy); }
+    .platform:nth-child(2) { color: var(--navy); background: var(--yellow); }
+    .platform-top { display: flex; justify-content: space-between; gap: 20px; align-items: baseline; }
+    .platform h3 { font-size: 1.2rem; }
+    .platform strong { font-size: 2rem; }
+    .meter { margin-top: 18px; height: 8px; background: rgba(255,255,255,.22); }
+    .platform:nth-child(2) .meter { background: rgba(7,27,58,.16); }
+    .meter i { display: block; height: 100%; background: var(--yellow); }
+    .platform:nth-child(2) .meter i { background: var(--navy); }
+    .platform p { margin: 12px 0 0; opacity: .75; font-size: .82rem; }
+    .flow-real { margin-top: 26px; }
+    .flow-real table { min-width: 700px; }
+    .flow-real caption { padding: 0 0 10px; color: var(--navy); font-size: .9rem; font-weight: 700; text-align: left; }
+    .flow-real .total td { color: var(--navy); font-weight: 700; border-top: 2px solid var(--navy); }
+
+    .campaign-list { border-top: 2px solid var(--navy); }
+    .campaign-row { display: grid; grid-template-columns: 1.2fr .8fr .8fr .8fr 1.5fr; gap: 24px; align-items: center; padding: 26px 8px; border-bottom: 1px solid var(--rule); }
+    .campaign-row h3 { font-size: 1.2rem; }
+    .campaign-row p { margin: 7px 0 0; color: var(--muted); font-size: .78rem; }
+    .metric small { display: block; color: var(--muted); font-size: .68rem; font-weight: 600; }
+    .metric strong { display: block; margin-top: 4px; font-size: 1.15rem; }
+    .reading { padding-left: 22px; border-left: 1px solid var(--rule); color: var(--muted); font-size: .82rem; }
+    .reading b { color: var(--ink); }
+
+    .podcast-shell { overflow: hidden; color: #fff; background: var(--navy); }
+    .podcast-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; padding: clamp(32px, 6vw, 70px); }
+    .podcast-intro h2 { max-width: 590px; font-size: clamp(2.6rem, 6vw, 5.7rem); }
+    .podcast-intro p { align-self: end; margin: 0; color: rgba(255,255,255,.7); }
+    .podcast-strip { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid rgba(255,255,255,.18); }
+    .podcast-stat { padding: 26px; border-right: 1px solid rgba(255,255,255,.18); }
+    .podcast-stat:last-child { border-right: 0; }
+    .podcast-stat span { display: block; color: rgba(255,255,255,.56); font-size: .7rem; }
+    .podcast-stat strong { display: block; margin-top: 8px; color: var(--yellow); font-size: 1.65rem; }
+
+    .table-wrap { overflow-x: auto; margin-top: 28px; }
+    table { width: 100%; min-width: 900px; border-collapse: collapse; font-size: .82rem; }
+    th { padding: 13px 14px; color: var(--muted); border-bottom: 1px solid var(--ink); text-align: left; font-size: .7rem; }
+    td { padding: 16px 14px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+    td.num, th.num { text-align: right; white-space: nowrap; }
+    tbody tr:hover { background: var(--yellow-soft); }
+    .ad-name { font-weight: 700; }
+    .ad-name small { display: block; margin-top: 4px; color: var(--muted); font-weight: 500; }
+    .best { color: var(--green); font-weight: 700; }
+    .finding { margin: 22px 0 0; padding: 22px 24px; border-left: 7px solid var(--yellow); background: #fff; }
+    .finding strong { color: var(--navy); }
+    .finding p { margin: 7px 0 0; color: var(--muted); font-size: .88rem; }
+
+    .creative-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 28px; }
+    .creative { overflow: hidden; color: inherit; background: var(--paper); text-decoration: none; border: 1px solid var(--rule); }
+    .creative img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--navy); }
+    .creative-body { padding: 16px; }
+    .creative-title { min-height: 72px; font-size: .78rem; font-weight: 600; line-height: 1.45; }
+    .creative-meta { display: block; margin-top: 12px; color: var(--blue); font-size: .67rem; font-weight: 700; }
+    .asset-note { max-width: 860px; margin: 20px 0 0; color: var(--muted); font-size: .78rem; }
+
+    .actions { display: grid; grid-template-columns: 1fr 1fr 1fr; border: 1px solid var(--navy); }
+    .action { min-height: 230px; padding: 30px; border-right: 1px solid var(--navy); background: var(--paper); }
+    .action:last-child { border-right: 0; }
+    .action .tag { color: var(--blue); font-size: .7rem; font-weight: 700; }
+    .action h3 { margin-top: 30px; font-size: 1.25rem; }
+    .action p { margin: 12px 0 0; color: var(--muted); font-size: .85rem; }
+
+    .method { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; padding: 30px; background: #e8edf3; }
+    .method h3 { font-size: 1rem; }
+    .method p, .method li { color: var(--muted); font-size: .78rem; }
+    .method ul { margin: 12px 0 0; padding-left: 18px; }
+    footer { padding: 32px 0 50px; color: var(--muted); font-size: .72rem; }
+
+    @media (max-width: 950px) {
+      nav { display: none; }
+      .hero-inner, .podcast-intro { grid-template-columns: 1fr; }
+      .hero-aside { border-left: 0; border-top: 1px solid rgba(7,27,58,.25); padding: 28px 0 0; }
+      .section-head { grid-template-columns: 1fr; gap: 12px; }
+      .flow-legend { grid-template-columns: 1fr 1fr; }
+      .flow-legend div { border-bottom: 1px solid var(--rule); }
+      .campaign-row { grid-template-columns: 1fr 1fr 1fr; }
+      .campaign-row > :first-child, .campaign-row .reading { grid-column: 1 / -1; }
+      .reading { padding: 0; border-left: 0; }
+      .creative-grid { grid-template-columns: repeat(2, 1fr); }
+      .actions { grid-template-columns: 1fr; }
+      .action { border-right: 0; border-bottom: 1px solid var(--navy); }
+      .action:last-child { border-bottom: 0; }
+    }
+    @media (max-width: 620px) {
+      .wrap { width: min(100% - 24px, var(--max)); }
+      .date-stamp { display: none; }
+      .hero-inner { min-height: auto; padding: 64px 0 40px; }
+      h1 { font-size: 2.9rem; }
+      .flow-scale { height: 52px; }
+      .flow-segment { padding: 0; font-size: 0; }
+      .flow-legend, .platform-grid, .podcast-strip, .method { grid-template-columns: 1fr; }
+      .flow-legend div, .podcast-stat { border-right: 0; border-bottom: 1px solid var(--rule); }
+      .campaign-row { grid-template-columns: 1fr 1fr; gap: 18px; }
+      .creative-grid { grid-template-columns: 1fr; }
+      .creative-title { min-height: auto; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media print { .masthead { position: static; } body { background: #fff; } .section { break-inside: avoid; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#resumen">Ir al contenido</a>
+  <header class="masthead">
+    <div class="masthead-inner wrap">
+      <a class="brand" href="../index.html"><i class="brand-mark" aria-hidden="true"></i>Colgas <span>informe de pauta</span></a>
+      <nav aria-label="Secciones del informe">
+        <a href="../index.html">Documentos</a><a href="#resumen">Resumen</a><a href="#campanas">Campañas</a><a href="#podcast">Podcast</a><a href="#acciones">Acciones</a>
+      </nav>
+      <span class="date-stamp">01 ENE — 20 SEP 2026</span>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="hero-inner wrap">
+      <div>
+        <p class="kicker">Siempre activas · Colgas Ya · BigPromo · Podcast</p>
+        <h1>Resultados de campañas · 2026</h1>
+        <p class="hero-lede">Colgas ha ejecutado COP 56,65 millones netos. BigPromo concentra dos tercios de la inversión; Siempre activas y Colgas Ya sostienen la base continua, mientras septiembre abre movilidad, alojamiento y podcast.</p>
+        <div class="hero-meta"><span>Meta Ads</span><span>Google Ads</span><span>Valores netos en COP</span><span>Corte 20.09.2026</span></div>
+      </div>
+      <aside class="hero-aside"><strong>53,4%</strong><p>del flow anual neto se ha ejecutado. Quedan COP 49,53 millones por distribuir.</p></aside>
+    </div>
+  </section>
+
+  <main id="resumen">
+    <section class="section wrap">
+      <div class="section-head"><span class="section-label">Lectura general</span><div class="section-copy"><h2>BigPromo define la escala. La base continua sostiene el flow.</h2><p>La cinta muestra cómo se reparte la inversión ejecutada. Siempre activas y Colgas Ya aparecen separadas para leer el flujo real del período.</p></div></div>
+      <div class="flow-board" aria-label="Distribución proporcional de la inversión">
+        <div class="flow-scale" aria-hidden="true"><div class="flow-segment big">BigPromo · 67,2%</div><div class="flow-segment always">Siempre activas · 21,5%</div><div class="flow-segment colgasya"></div><div class="flow-segment podcast">Podcast</div><div class="flow-segment alojamiento"></div><div class="flow-segment movilidad"></div></div>
+        <dl class="flow-legend">
+          <div><dt>BigPromo</dt><dd>$38.050.424</dd><small>67,2% del gasto</small></div>
+          <div><dt>Siempre activas</dt><dd>$12.181.653</dd><small>21,5% del gasto</small></div>
+          <div><dt>Colgas Ya</dt><dd>$999.890</dd><small>1,8% del gasto</small></div>
+          <div><dt>Podcast</dt><dd>$4.603.848</dd><small>8,1% del gasto</small></div>
+          <div><dt>Alojamiento</dt><dd>$489.521</dd><small>0,9% del gasto</small></div>
+          <div><dt>WhatsApp Movilidad</dt><dd>$321.417</dd><small>0,6% del gasto</small></div>
+        </dl>
+      </div>
+      <div class="platform-grid">
+        <article class="platform"><div class="platform-top"><h3>Meta</h3><strong>60,3%</strong></div><div class="meter"><i style="width:60.3%"></i></div><p>$42.874.384 ejecutados de $71.060.870 presupuestados.</p></article>
+        <article class="platform"><div class="platform-top"><h3>Google</h3><strong>91,1%</strong></div><div class="meter"><i style="width:91.1%"></i></div><p>$13.772.369 ejecutados de $15.113.043 presupuestados.</p></article>
+      </div>
+      <div class="table-wrap flow-real">
+        <table>
+          <caption>Ejecutado real del flow · valores netos COP</caption>
+          <thead><tr><th>Medio</th><th class="num">Presupuesto</th><th class="num">Ejecutado</th><th class="num">Saldo</th><th class="num">% ejecución</th></tr></thead>
+          <tbody>
+            <tr><td>Meta · Facebook + Instagram</td><td class="num">$71.060.870</td><td class="num">$42.874.384</td><td class="num">$28.186.486</td><td class="num">60,3%</td></tr>
+            <tr><td>Google · YouTube + Search</td><td class="num">$15.113.043</td><td class="num">$13.772.369</td><td class="num">$1.340.674</td><td class="num">91,1%</td></tr>
+            <tr><td>Programática · no ejecutada</td><td class="num">$20.000.000</td><td class="num">$0</td><td class="num">$20.000.000</td><td class="num">0,0%</td></tr>
+            <tr class="total"><td>Total neto</td><td class="num">$106.173.913</td><td class="num">$56.646.753</td><td class="num">$49.527.160</td><td class="num">53,4%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section wrap" id="campanas">
+      <div class="section-head"><span class="section-label">Campañas</span><div class="section-copy"><h2>El resultado principal cambia con el objetivo.</h2><p>Siempre activas y Colgas Ya son la base continua; BigPromo se lee por registros; Movilidad y Alojamiento, por conversaciones iniciadas; Podcast, por vistas de video.</p></div></div>
+      <div class="campaign-list">
+        <article class="campaign-row"><div><h3>Siempre activas</h3><p>Meta + Google · enero–septiembre</p></div><div class="metric"><small>Inversión</small><strong>$12.181.653</strong></div><div class="metric"><small>Impresiones</small><strong>3.634.174</strong></div><div class="metric"><small>Interacciones / vistas</small><strong>865.064</strong></div><div class="reading"><b>La base continua concentra 21,5% del gasto ejecutado.</b> Agrupa objetivos mixtos de comunidad, interacción, visitas y presencia de marca; no tiene un único KPI.</div></article>
+        <article class="campaign-row"><div><h3>Colgas Ya</h3><p>Meta · enero–septiembre</p></div><div class="metric"><small>Inversión</small><strong>$999.890</strong></div><div class="metric"><small>Impresiones</small><strong>208.102</strong></div><div class="metric"><small>Conversaciones</small><strong>1.498</strong></div><div class="reading"><b>La línea de Colgas Ya generó 279 leads.</b> Su costo promedio fue de $668 por conversación; incluye la campaña activa de 2026 y el remanente de 2025.</div></article>
+        <article class="campaign-row"><div><h3>BigPromo</h3><p>Meta + YouTube · mayo–julio</p></div><div class="metric"><small>Inversión</small><strong>$38.050.424</strong></div><div class="metric"><small>Impresiones</small><strong>10.007.392</strong></div><div class="metric"><small>Registros Meta</small><strong>2.214</strong></div><div class="reading"><b>La campaña de registros costó $8.287 por registro.</b> El frente completo combinó conversión, tráfico, interacción y cobertura en YouTube.</div></article>
+        <article class="campaign-row"><div><h3>WhatsApp Movilidad</h3><p>Meta · septiembre</p></div><div class="metric"><small>Inversión</small><strong>$321.417</strong></div><div class="metric"><small>Conversaciones</small><strong>281</strong></div><div class="metric"><small>Costo / conversación</small><strong>$1.144</strong></div><div class="reading"><b>El 64% de las conversaciones vino del anuncio de Instagram.</b> El conjunto también registró 78 leads.</div></article>
+        <article class="campaign-row"><div><h3>Alojamiento</h3><p>Meta · WhatsApp Comercio EDS · septiembre</p></div><div class="metric"><small>Inversión</small><strong>$489.521</strong></div><div class="metric"><small>Conversaciones</small><strong>74</strong></div><div class="metric"><small>Costo / conversación</small><strong>$6.615</strong></div><div class="reading"><b>El anuncio generó 442 clics de enlace.</b> La brecha entre clic y conversación pide revisar la continuidad del mensaje en WhatsApp.</div></article>
+        <article class="campaign-row"><div><h3>Podcast</h3><p>Google/YouTube · julio–septiembre</p></div><div class="metric"><small>Inversión</small><strong>$4.603.848</strong></div><div class="metric"><small>Vistas</small><strong>369.586</strong></div><div class="metric"><small>CPV combinado</small><strong>$12,46</strong></div><div class="reading"><b>La campaña nombrada Podcast entregó casi la mitad de las vistas con 27% de la inversión.</b> El detalle por anuncio está a continuación.</div></article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="podcast">
+      <div class="podcast-shell">
+        <div class="podcast-intro"><h2>Podcast: dos anuncios, cinco videos.</h2><p>Google Ads concentró los videos en dos anuncios responsivos llamados “Podcast”. Por eso los resultados se pueden atribuir a cada anuncio, pero no a cada video individual dentro de ese anuncio.</p></div>
+        <div class="podcast-strip"><div class="podcast-stat"><span>Inversión total</span><strong>$4.603.848</strong></div><div class="podcast-stat"><span>Impresiones</span><strong>1.849.521</strong></div><div class="podcast-stat"><span>Vistas de video</span><strong>369.586</strong></div><div class="podcast-stat"><span>Clics</span><strong>3.898</strong></div></div>
+      </div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Anuncio</th><th>Período activo observado</th><th class="num">Inversión</th><th class="num">Impresiones</th><th class="num">Vistas</th><th class="num">View rate</th><th class="num">Clics</th><th class="num">CPV</th></tr></thead>
+        <tbody>
+          <tr><td class="ad-name">Podcast <small>ID 816277454147 · campaña 1. YOUTUBE VIEWS</small></td><td>Julio–septiembre</td><td class="num">$3.366.123</td><td class="num">1.469.496</td><td class="num">188.201</td><td class="num">12,8%</td><td class="num">3.338</td><td class="num">$17,89</td></tr>
+          <tr><td class="ad-name">Podcast <small>ID 824611062857 · campaña 1. PODCAST — YOUTUBE VIEWS</small></td><td>Septiembre</td><td class="num">$1.237.725</td><td class="num">380.025</td><td class="num">181.385</td><td class="num best">47,7%</td><td class="num">560</td><td class="num best">$6,82</td></tr>
+        </tbody>
+      </table></div>
+      <div class="finding"><strong>La segunda configuración es la señal a conservar.</strong><p>Con 27% de la inversión total de Podcast produjo 49% de las vistas. Su CPV fue 62% menor y su view rate fue 3,7 veces el de la primera campaña. La comparación es descriptiva: las fechas y la mezcla de videos no son idénticas.</p></div>
+
+      <div class="section-head" style="margin-top:58px"><span class="section-label">Videos pautados</span><div class="section-copy"><h2>Los activos que alimentaron los anuncios</h2><p>Cada miniatura abre el video publicado en YouTube. El capítulo 6 estuvo presente en los dos anuncios.</p></div></div>
+      <div class="creative-grid">
+        <a class="creative" href="https://www.youtube.com/watch?v=UTX7RgOh3So" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/UTX7RgOh3So/hqdefault.jpg" alt="Miniatura del capítulo 4 sobre seguridad con propósito"><div class="creative-body"><div class="creative-title">Capítulo 4: Seguridad con propósito</div><span class="creative-meta">Primera campaña · ver en YouTube</span></div></a>
+        <a class="creative" href="https://www.youtube.com/watch?v=-jfi-Lrxb4Q" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/-jfi-Lrxb4Q/hqdefault.jpg" alt="Miniatura del capítulo 5 sobre AutoGLP"><div class="creative-body"><div class="creative-title">Capítulo 5: AutoGLP, energía para una movilidad sostenible</div><span class="creative-meta">Primera campaña · ver en YouTube</span></div></a>
+        <a class="creative" href="https://www.youtube.com/watch?v=4Ewvr2qQuHo" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/4Ewvr2qQuHo/hqdefault.jpg" alt="Miniatura del capítulo 6 sobre emprendimiento con propósito"><div class="creative-body"><div class="creative-title">Capítulo 6: Energía que transforma</div><span class="creative-meta">Ambas campañas · ver en YouTube</span></div></a>
+        <a class="creative" href="https://www.youtube.com/watch?v=fby50LFPanQ" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/fby50LFPanQ/hqdefault.jpg" alt="Miniatura del capítulo 3 sobre emprender con propósito"><div class="creative-body"><div class="creative-title">Capítulo 3: Emprender con propósito</div><span class="creative-meta">Campaña Podcast · ver en YouTube</span></div></a>
+        <a class="creative" href="https://www.youtube.com/watch?v=y2oxe4vXWVc" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/y2oxe4vXWVc/hqdefault.jpg" alt="Miniatura de Historias con Propósito"><div class="creative-body"><div class="creative-title">Historias con Propósito: El sabor de cada esquina</div><span class="creative-meta">Campaña Podcast · ver en YouTube</span></div></a>
+      </div>
+      <p class="asset-note">Limitación de atribución: los cinco videos son activos dentro de anuncios responsivos. Google Ads entrega inversión, impresiones y vistas al nivel del anuncio en esta configuración; repartir esos resultados entre videos sin un reporte de activos sería una estimación, por eso no se hace.</p>
+    </section>
+
+    <section class="section wrap" id="acciones">
+      <div class="section-head"><span class="section-label">Siguiente paso</span><div class="section-copy"><h2>Tres decisiones para el cierre del año</h2></div></div>
+      <div class="actions">
+        <article class="action"><span class="tag">Podcast</span><h3>Conservar la campaña nombrada y separar los videos.</h3><p>La segunda campaña tiene mejor CPV y view rate. Crear un anuncio por video permitiría saber qué episodio aporta el resultado.</p></article>
+        <article class="action"><span class="tag">WhatsApp</span><h3>Usar Movilidad como referencia de costo.</h3><p>Movilidad logró conversaciones a $1.144; Alojamiento quedó en $6.615. Antes de escalar, revisar promesa, formulario y primer mensaje del flujo de hotelería.</p></article>
+        <article class="action"><span class="tag">Presupuesto</span><h3>Reasignar con el saldo visible.</h3><p>Quedan $49,53 millones netos. Google ya ejecutó 91,1% de su línea, mientras Meta está en 60,3% y Programática continúa sin gasto.</p></article>
+      </div>
+    </section>
+
+    <section class="section wrap"><div class="method"><div><h3>Fuentes</h3><p>Meta Ads y Google Ads, consulta directa de la cuenta de Colgas. Período acumulado del 1 de enero al 20 de septiembre de 2026. Inversión neta en pesos colombianos.</p></div><div><h3>Criterio de agrupación</h3><ul><li>Siempre activas: campañas sociales de base en Meta y campañas ALWAYSON de Google.</li><li>Colgas Ya: campañas Meta con nombre WHATSAPP - COLGASYA.</li><li>BigPromo: cuatro campañas Meta y la campaña BigPromo de YouTube.</li><li>Movilidad y Alojamiento: campañas Meta con objetivo WhatsApp.</li><li>Podcast: campaña 1. YOUTUBE VIEWS y campaña 1. PODCAST — YOUTUBE VIEWS.</li><li>El ejecutado real del flow conserva las tres líneas del plan: Meta, Google y Programática.</li></ul></div></div></section>
+  </main>
+  <footer><div class="wrap">Colgas · Informe de pauta 2026 · Preparado con datos de plataforma al 20 de septiembre de 2026</div></footer>
+</body>
+</html>
